@@ -2,8 +2,17 @@
 
 class Program
 {
+    
+    
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        List<string> uppgifter = new List<string>();
+        
+        Console.Write("Skriv in den uppgiften du vill lägga till: ");
+        var uppgift = Console.ReadLine();
+        
+        uppgifter.Add(uppgift);
+        
+        Console.WriteLine($"Uppgiften {uppgift} har lagts till.");
     }
 }
