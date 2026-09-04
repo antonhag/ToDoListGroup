@@ -19,7 +19,11 @@ class Program
         for (int i = 0; i < uppgifter.Count; i++)
         {
             Console.WriteLine($"{i + 1}. {uppgifter[i]}");
+
+            Console.WriteLine("Vill du ta bort denna uppgift? (ja/nej): ");
         }
+
+        
         
     }
 }
