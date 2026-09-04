@@ -14,5 +14,12 @@ class Program
         uppgifter.Add(uppgift);
         
         Console.WriteLine($"Uppgiften {uppgift} har lagts till.");
+
+
+        for (int i = 0; i < uppgifter.Count; i++)
+        {
+            Console.WriteLine($"{i + 1}. {uppgifter[i]}");
+        }
+        
     }
 }
