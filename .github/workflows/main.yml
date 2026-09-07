@@ -1,0 +1,12 @@
+name: Print WorkFlow
+
+on: push
+
+jobs:
+  print-info:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print repository and branch
+      run:
+        echo "Repository:${{ github.repository }}"
+        echo "Branch:${{ github.ref_name }}"
